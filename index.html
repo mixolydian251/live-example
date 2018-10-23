@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Live Example</title>
+
+  <style>
+    h1 {
+      animation: grow 1.2s ease infinite;
+      text-align: center;
+    }
+
+    div {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    @keyframes grow {
+
+      0%,
+      100% {
+        color: blue;
+        transform: scale(1)
+      }
+
+      50% {
+        color: green;
+        transform: scale(2)
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Here is live site!</h1>
+  </div>
+</body>
+
+</html>
