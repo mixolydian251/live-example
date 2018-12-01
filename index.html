@@ -1,46 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Live Example</title>
-
-  <style>
-    h1 {
-      animation: grow 1.2s ease infinite;
-      text-align: center;
-    }
-
-    div {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center
-    }
-
-    @keyframes grow {
-
-      0%,
-      100% {
-        color: blue;
-        transform: scale(1)
-      }
-
-      50% {
-        color: green;
-        transform: scale(2)
-      }
-    }
-  </style>
+  <title>Document</title>
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
 </head>
+<h1>Test</h1>
 
 <body>
-  <div>
-    <h1>Here is a live site!</h1>
-  </div>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCLHf9G9NxkDHUmlQZ7w-l7AUWj4j_xZxM",
+    authDomain: "test-2ddfb.firebaseapp.com",
+    databaseURL: "https://test-2ddfb.firebaseio.com",
+    projectId: "test-2ddfb",
+    storageBucket: "test-2ddfb.appspot.com",
+    messagingSenderId: "960572502203"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="app.js"></script>
 </body>
-
 </html>
